@@ -321,7 +321,7 @@ public class AddressBook {
 
 
     public void writeToFile() {
-        String fileName = "AddressBook.txt";
+        String fileName = "contact.txt";
         StringBuffer contactBuffer = new StringBuffer();
 
         int i = 0;
@@ -345,7 +345,7 @@ public class AddressBook {
 
     public void writeToCSV() throws IOException {
         List<String[]> csvData = new LinkedList<>();
-        CSVWriter write = new CSVWriter(new FileWriter("AddressBook.csv"));
+        CSVWriter write = new CSVWriter(new FileWriter("contact.csv"));
         int i = 0;
         for (String key : map.keySet()) {
             i++;
